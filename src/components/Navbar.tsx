@@ -13,13 +13,13 @@ const links = [
 
 export function Navbar() {
   return (
-    <header className="animate-fade-in-up sticky top-0 z-50 border-b border-white/10">
+    <header className="sticky top-0 z-50 border-b border-white/10">
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[#101319]/70 backdrop-blur-md"
+        className="animate-fade-in-up absolute inset-0 -z-10 bg-[#101319]/70 backdrop-blur-md"
       />
       <Container>
-        <nav className="flex h-16 items-center justify-between">
+        <nav className="animate-fade-in-up flex h-16 items-center justify-between">
           <Link
             href="#top"
             className="shrink-0 text-sm font-semibold tracking-tight whitespace-nowrap text-neutral-100"
