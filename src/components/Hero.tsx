@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden py-20 sm:py-28"
+      className="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden py-20 sm:py-28"
     >
       <Container>
         <div className="min-w-0 lg:max-w-3xl">
