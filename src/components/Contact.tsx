@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 sm:py-24">
+    <section id="contact" className="scroll-mt-16 py-20 sm:py-24">
       <Container>
         <Reveal>
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-8 py-14 text-center shadow-[0_1px_0_rgba(255,255,255,0.04)_inset,0_24px_48px_-24px_rgba(0,0,0,0.7)]">

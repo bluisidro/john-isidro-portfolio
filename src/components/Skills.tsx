@@ -7,7 +7,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="bg-white/[0.02] py-20 sm:py-24"
+      className="scroll-mt-16 bg-white/[0.02] py-20 sm:py-24"
     >
       <Container>
         <Reveal>

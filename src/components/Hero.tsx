@@ -113,9 +113,14 @@ export function Hero() {
       <a
         href="#about"
         aria-label="Scroll to About section"
-        className="animate-bounce-hint ease-bounce absolute bottom-8 left-1/2 inline-flex size-10 -translate-x-1/2 items-center justify-center rounded-full border border-white/15 text-neutral-400 transition-colors duration-300 hover:border-white/30 hover:text-neutral-100"
+        className="group absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-neutral-400 transition-colors duration-300 hover:text-neutral-100"
       >
-        <ChevronDownIcon className="size-5" />
+        <span className="text-xs font-medium tracking-wide uppercase">
+          Scroll to explore
+        </span>
+        <span className="animate-bounce-hint ease-bounce inline-flex size-10 items-center justify-center rounded-full border border-white/15 transition-colors duration-300 group-hover:border-white/30">
+          <ChevronDownIcon className="size-5" />
+        </span>
       </a>
     </section>
   );

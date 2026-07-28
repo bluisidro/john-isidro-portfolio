@@ -26,7 +26,17 @@ export function Navbar() {
               {profile.name.split(" ").slice(1).join(" ")}
             </span>
           </Link>
-          <ul className="flex min-w-0 items-center gap-4 overflow-x-auto pl-4 sm:gap-8">
+          <ul className="flex min-w-0 items-center pl-4 sm:hidden">
+            <li className="shrink-0">
+              <a
+                href="#contact"
+                className="ease-bounce text-sm text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
+              >
+                Let&apos;s talk
+              </a>
+            </li>
+          </ul>
+          <ul className="hidden min-w-0 items-center gap-8 overflow-x-auto pl-4 sm:flex">
             {links.map((link) => (
               <li key={link.href} className="shrink-0">
                 <a

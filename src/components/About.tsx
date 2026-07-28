@@ -6,26 +6,17 @@ import { about, profile } from "@/data/portfolio";
 
 export function About() {
   return (
-    <section id="about" className="py-20 sm:py-24">
+    <section id="about" className="scroll-mt-16 py-20 sm:py-24">
       <Container>
         <Reveal>
-          <SectionHeading eyebrow="About" title="A bit about me" />
           <div className="flex flex-col gap-8 sm:flex-row-reverse sm:items-start">
-            <div className="relative size-52 shrink-0 self-center sm:size-60 sm:self-start">
-              <div
-                className="relative size-full overflow-hidden rounded-full"
-                style={{
-                  maskImage:
-                    "radial-gradient(closest-side, black 50%, transparent 100%)",
-                  WebkitMaskImage:
-                    "radial-gradient(closest-side, black 50%, transparent 100%)",
-                }}
-              >
+            <div className="relative size-80 shrink-0 self-center opacity-95 sm:size-96 sm:self-start">
+              <div className="avatar-blob relative size-full overflow-hidden border border-white/15">
                 <Image
                   src={profile.avatarUrl}
                   alt={profile.name}
-                  width={240}
-                  height={240}
+                  width={384}
+                  height={384}
                   className="size-full object-cover grayscale-[35%] contrast-110 brightness-90"
                 />
                 <div
@@ -38,10 +29,13 @@ export function About() {
                 />
               </div>
             </div>
-            <div className="space-y-4 text-base leading-relaxed text-neutral-400">
-              {about.bio.map((paragraph, i) => (
-                <p key={i}>{paragraph}</p>
-              ))}
+            <div className="min-w-0">
+              <SectionHeading eyebrow="About" title="A bit about me" />
+              <div className="space-y-4 text-base leading-relaxed text-neutral-400">
+                {about.bio.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
             </div>
           </div>
         </Reveal>

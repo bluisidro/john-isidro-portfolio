@@ -24,7 +24,7 @@ export const about = {
 export const skills: { category: string; items: string[] }[] = [
   {
     category: "Languages",
-    items: ["TypeScript", "JavaScript", "HTML5", "CSS3"],
+    items: ["TypeScript", "JavaScript", "Python", "SQL"],
   },
   {
     category: "Backend Architecture",
@@ -40,7 +40,7 @@ export const skills: { category: string; items: string[] }[] = [
   },
   {
     category: "Frontend Frameworks",
-    items: ["React", "Next.js", "Angular", "Vue.js", "Tailwind CSS"],
+    items: ["HTML5", "CSS3", "React", "Next.js", "Angular", "Vue.js", "Tailwind CSS"],
   },
   {
     category: "Databases & Caching",

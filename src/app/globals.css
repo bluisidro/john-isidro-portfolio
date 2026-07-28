@@ -88,6 +88,17 @@ body {
   animation: bounce-hint 1.8s ease-in-out infinite;
 }
 
+.avatar-blob {
+  clip-path: polygon(
+    22% 0%,
+    100% 0%,
+    100% 68%,
+    78% 100%,
+    0% 100%,
+    0% 32%
+  );
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in-up,
   .reveal,
